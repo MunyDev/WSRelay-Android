@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">WebSocket Relay</string>
+    <string name="ip_addr">IP Address: </string>
+    <string name="portnum">Port Number: </string>
+    <string name="back">Back</string>
+    <string name="websocket_starting">WebSocket starting...</string>
+    <string name="stop">Stop</string>
+    <string name="websocket_view_connection_string">View WebSocket Connections</string>
+    <string name="websocket_view_connections_title">WebSocket Connection List</string>
+    <string name="wsrelay_settings_maxclientnumber">Max Connections:(Must Restart) </string>
+    <string name="wsrelay_progress_stoppingserver">Stopping server...</string>
+    <string name="wsrelay_progress_startingserver">Starting server...</string>
+    <string name="wsrelay_progress_restartingserver">Restarting server...</string>
+
+
+</resources>

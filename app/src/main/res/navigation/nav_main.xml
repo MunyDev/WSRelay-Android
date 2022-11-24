@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/fragmentStart">
+
+    <fragment
+        android:id="@+id/fragmentStart"
+        android:name="org.muny.wsrelay.FragmentStart"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_fragmentStart_to_connectionListFragment"
+            app:destination="@id/connectionListFragment" />
+        <action
+            android:id="@+id/action_fragmentStart_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/connectionListFragment"
+        android:name="org.muny.wsrelay.ConnectionListFragment"
+        android:label="fragment_connection_list"
+        tools:layout="@layout/fragment_connection_list" >
+        <action
+            android:id="@+id/action_connectionListFragment_to_fragmentStart2"
+            app:destination="@id/fragmentStart" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="org.muny.wsrelay.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_fragmentStart"
+            app:destination="@id/fragmentStart" />
+    </fragment>
+</navigation>
